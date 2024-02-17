@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
+import pickle
 
-model = joblib.load("car_prediction_model.pkl")
+with open("car_prediction_model.pkl", "rb") as f:
+    model = pickle.load(f)
 st.title("Car Prediction Model")
 
 # Define the label mapping

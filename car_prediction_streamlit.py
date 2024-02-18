@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from sklearn.linear_model import LinearRegression
 
 with open("car_prediction_model.pkl", "rb") as f:
     model = pickle.load(f)

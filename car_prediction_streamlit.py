@@ -38,7 +38,7 @@ Paint_Type = st.selectbox("Paint Type",list(label_mapping_painttype.values()))
 Nr_of_Doors = st.slider("Nr. of Doors", 2, 7)
 Nr_of_Seats = st.slider("Nr. of Seats", 2, 7)
 Gearing_Type = st.selectbox("Gearing Type", list(label_mapping_gearingtype.values()))
-#Weight = st.slider("Weight", 500, 2500)
+Weight = st.slider("Weight", 500, 2500)
 Drive_chain = st.selectbox("Drive chain", list(label_mapping_drivechain.values()))
 CO2_Emission = st.slider("CO2 Emission", 0, 1000)
 Gears = st.slider("Gears", 1,8)
@@ -61,7 +61,7 @@ df = pd.DataFrame(
             "Nr_of_Doors": Nr_of_Doors,
             "Nr_of_Seats": Nr_of_Seats,
             "Gearing_Type": reverse_label_mapping_gearingtype[Gearing_Type],
-            "Weight": "Weight",
+            "Weight": Weight,
             "Drive_chain": reverse_label_mapping_drivechain[Drive_chain],
             "CO2_Emission": CO2_Emission,
             "Gears": Gears,

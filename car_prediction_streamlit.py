@@ -59,7 +59,7 @@ df = pd.DataFrame(
             "hp": hp,
             "Paint_Type": reverse_label_mapping_painttype[Paint_Type],
             "Nr_of_Doors": Nr_of_Doors,
-            "Nr_of_Seats": "Nr. of Seats",
+            "Nr_of_Seats": Nr_of_Seats,
             "Gearing_Type": reverse_label_mapping_gearingtype[Gearing_Type],
             "Weight": "Weight",
             "Drive_chain": reverse_label_mapping_drivechain[Drive_chain],

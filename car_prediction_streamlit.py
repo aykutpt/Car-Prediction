@@ -34,13 +34,13 @@ km = st.slider("km", 0, 500000)
 registration = st.slider("registration", 2016, 2019)
 prev_owner = st.slider("prev_owner",1,4)
 hp = st.slider("hp", 50, 300)
-Paint_Type = st.selectbox("Paint Type",list(label_mapping_painttype.values()))
+#Paint_Type = st.selectbox("Paint Type",list(label_mapping_painttype.values()))
 Nr_of_Doors = st.slider("Nr. of Doors", 2, 7)
-Nr_of_Seats = st.slider("Nr. of Seats", 2, 7)
+#Nr_of_Seats = st.slider("Nr. of Seats", 2, 7)
 Gearing_Type = st.selectbox("Gearing Type", list(label_mapping_gearingtype.values()))
-Weight = st.slider("Weight", 500, 2500)
+#Weight = st.slider("Weight", 500, 2500)
 Drive_chain = st.selectbox("Drive chain", list(label_mapping_drivechain.values()))
-CO2_Emission = st.slider("CO2 Emission", 0, 1000)
+#CO2_Emission = st.slider("CO2 Emission", 0, 1000)
 Gears = st.slider("Gears", 4,8)
 Upholstery_Type = st.selectbox("Upholstery_Type", list(label_mapping_upholsterytype.values()))
 EnginePowerCC = st.slider("EnginePowerCC", 800, 3000)
@@ -57,13 +57,13 @@ df = pd.DataFrame(
             "registration": registration,
             "prev_owner": prev_owner,
             "hp": hp,
-            "Paint_Type": reverse_label_mapping_painttype[Paint_Type],
+            "Paint_Type": "Paint Type",
             "Nr_of_Doors": Nr_of_Doors,
-            "Nr_of_Seats": Nr_of_Seats,
+            "Nr_of_Seats": "Nr. of Seats",
             "Gearing_Type": reverse_label_mapping_gearingtype[Gearing_Type],
-            "Weight": Weight,
+            "Weight": "Weight",
             "Drive_chain": reverse_label_mapping_drivechain[Drive_chain],
-            "CO2_Emission": CO2_Emission,
+            "CO2_Emission": "CO2 Emission",
             "Gears": Gears,
             "Upholstery_Type": reverse_label_mapping_upholsterytype[Upholstery_Type],
             "EnginePowerCC": EnginePowerCC,

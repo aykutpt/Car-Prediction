@@ -57,7 +57,7 @@ df = pd.DataFrame(
             "registration": registration,
             "prev_owner": prev_owner,
             "hp": hp,
-            "Paint_Type": "Paint Type",
+            "Paint_Type": reverse_label_mapping_painttype,
             "Nr_of_Doors": Nr_of_Doors,
             "Nr_of_Seats": "Nr. of Seats",
             "Gearing_Type": reverse_label_mapping_gearingtype[Gearing_Type],

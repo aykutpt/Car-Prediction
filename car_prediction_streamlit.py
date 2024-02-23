@@ -45,7 +45,7 @@ Gears = st.slider("Gears", 4,8)
 Upholstery_Type = st.selectbox("Upholstery_Type", list(label_mapping_upholsterytype.values()))
 EnginePowerCC = st.slider("EnginePowerCC", 800, 3000)
 FUEL = st.selectbox("FUEL", list(label_mapping_fuel.values()))
-Consumption_City = st.slider("Consumption_City", 3, 20)
+Consumption_City = st.slider("Consumption_City", 3, 10)
 
 # Create the DataFrame with the selected feature values
 df = pd.DataFrame(
